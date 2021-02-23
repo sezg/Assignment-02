@@ -1,0 +1,294 @@
+html, body {
+  background-color: lightgrey;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 1rem;
+  color: #303137;
+  margin: 0;
+}
+.body-con {
+  float: left;
+  width: 90%;
+}
+
+.title {
+  padding: 1rem 1rem;
+  background-color: #343a40;
+}
+
+.header {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.questions-container {
+  position: relative;
+  max-width: 1140px;
+  padding: .5rem 1rem;
+}
+.que-text {
+  display: flex;
+}
+
+.progress-wrap {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+progress {
+  width: 65%;
+  margin: 0 0 5px 0;
+}
+
+.contact-container {
+  position: relative;
+  padding: 1rem 0;
+  background-color: whitesmoke;
+}
+
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 1rem;
+}
+
+.section-header {
+  text-align: center;
+  padding: 2rem 0 2rem;
+}
+.form-container {
+  align-items: center;
+  padding: 0 20px 0 15px;
+  flex: auto;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+.pro-form {
+  padding: 2px 20px 20px 20px; 
+}
+
+.form-group {
+  margin-bottom: .75rem;
+}
+
+.form-control {
+  position: relative;
+  /*  max-width: 700px;*/
+  width: 80%;
+  background-color: white;
+  color: #292b2c;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-clip: padding-box;
+  display: block;
+}
+
+.form-radio {
+  padding-bottom: 1rem;
+}
+
+form label p {
+  font-size: 14px;
+}
+
+.button-section {
+  text-align: center;
+}
+
+.btn-wrapper {
+  position: relative;
+  color: white;
+  background-color: #66B6D2;
+  font-size: 15px;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+.footer-container {
+  padding: 1rem 1rem;
+  background-color: #343a40;
+}
+
+.footer-control {
+  display: flex;
+}
+
+.copyRight {
+  max-width: 700px;
+  padding: 3rem 6rem .5rem 4rem;
+  text-align: center;
+  color: white;
+}
+
+.social-media {
+  max-width: 700px;
+  padding: 1.5rem 2rem 1.5rem 1rem;
+  text-align: center;
+}
+
+.fa {
+  margin: 10px;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-google-plus-square {
+  color: #c32f10;
+}
+
+.fa-instagram {
+  color: deeppink;
+}
+
+.socialWrapper {
+  margin: auto;
+}
+
+/*
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+*/
+
+/*
+input[type='text'],
+input[type='number'], {
+-webkit-appearance: none;
+@include background(linear-gradient(#ccc, #fff));
+padding: 4px 20px 4px 5px;
+outline: 0;
+border: 0;
+box-shadow: inset 1px 1px 1px rgba(black, 0.3);
+&:focus {
+background: white;
+}
+}
+*/
+
+
+
+/************** moble compatibility ***************/
+
+@media (max-width: 1024px) {
+  .questions-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .form-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .prof-media {
+    flex-direction: column;
+  }
+  .form-group {
+    display: flex;
+  }
+  .btn-wrapper {
+    text-align: center;
+  }
+}
+
+@media (max-width: 868px) {
+  .questions-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-group {
+    display: flex;
+  }
+  .form-control {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-wrapper {
+    text-align: center;
+  }
+  .title {
+    display: 100%;
+  }
+  .questions-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container {
+    display: 100%;
+  }
+  form {
+    position: relative;
+  }
+
+  .footer-control {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 599px) {
+  .questions-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+.btn-wrapper {
+  font-size: 12px;
+  padding: 10px 35px;
+}
+.footer-control {
+  display: block;
+  text-align: center;
+}
+}
+
+@media (max-width: 499px) {
+  .questions-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 377px) {
+  .questions-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  .form-control {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 199px) {
+  .questions-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+

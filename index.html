@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" href="prefixfree.min.js"></script>
+
+    <!-- for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Sagar-Assignment-02</title>
+
+  </head>
+  <body>
+    <!-- Header -->
+    <section class="title">
+      <h1 class="header">Assignment 02</h1>
+    </section>
+
+    <!-- Part-1 -->
+
+    <div class="questions-container">
+      <h4 class="subHead">1. Tidy up your working area [Marks: 0%].</h4>
+      <p class="que-text">
+        1. Remove the screenshots of Part 1 of Assignment 1 and the links of Part 3 of Assignment 1.
+      </p>
+      <p class="que-text">
+        ==> Done!
+      </p>
+    </div>
+
+    <!-- Part-2 -->
+
+    <div class="questions-container">
+      <h4 class="subHead">2. Prefix-free [Marks: 35%].</h4>
+      <p>
+        1. Use prefix-free (<a href="http://leaverou.github.io/prefixfree/" target="_blank"><span>http://leaverou.github.io/prefixfree/</span></a>) in your web site to provide vendor-specific prefixes for two CSS3 features (finding the features is a challenge in itself as new features are constantly adopted by vendors).
+      </p>
+      <p class="que-text">
+        ==> Done!
+      </p>
+    </div>
+
+    <!-- part-3 -->
+
+    <div class="questions-container">
+      <h4 class="subHead">3. Modernizr [Marks: 35%].</h4>
+      <p>
+        1. Go to <a href="http://modernizr.com/download/" target="_blank"><span>http://modernizr.com/download/</span></a>  and select the detect that allows you to show a progress meter as the user enters the information on the form (Part 2 of Assignment 1). You don’t need to actually show a meter; just check for compatibility. Add a detect for geolocation which you will need for Part 1 of Assignment 3.
+      </p>
+      <p class="que-text">
+        2. Use Modernizr to check for features availability and provide gracious fallbacks.
+      </p>
+    </div>
+
+    <!-- part-3-Ans -->
+
+    <section class="contact-container">
+      <div class="container">
+        <div class="section-header">
+          <h1>Drop us a line</h1>
+        </div>
+
+        <form accept-charset="UTF-8" action="" class="pro-form" id="pro-form" method="post">
+          <div class="form-container">
+            <div class="progress-wrap">
+              <progress max="100" value="0" id="progress"></progress>
+              <div class="progress-message" id="progress-message">0% Completed.</div>
+            </div>
+
+            <label for="email">Enter your email:</label>
+
+            <div class="form-group">
+              <input class="form-control" type="email" id="email"
+                     size="30" required="required">
+            </div>
+
+            <label for="url">Personal URL:</label>
+            <div class="form-group">
+              <input class="form-control" type="url" name="url" id="url"
+                     placeholder="https://example.com"
+                     pattern="https://.*" size="30" required="required">
+            </div>
+
+            <label for="date-of-birth">Year of birth:</label>
+            <div class="form-group">
+              <input her class="form-control" type="date" id="birthday" name="birthday"
+                     value="-"
+                     min="1920-01-01" max="2099-12-31" required="required">
+            </div>
+
+            <div class="form-radio">
+              <p>Select Gender</p>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label>
+
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label>
+
+              <input type="radio" id="other" name="gender" value="other">
+              <label for="other">Other</label>
+            </div>
+            <div class="field">
+              <label class="form-group" for="comments">Comments</label>
+              <textarea class="form-control" id="comments" rows="6" cols="22" required="required"></textarea>
+            </div>
+
+            <div class="form-group">
+              <input type="checkbox" id="checkbox" name="checkbox">
+              <label for="checkbox">Confirm that the data entered are fictitious.</label>
+            </div>
+
+            <!----------Geolocation--------->
+            
+            <div class="form-group">
+              <button id = "find-me">Show my location</button><br/>
+              <p id = "status"></p>
+              <a id = "map-link" target="_blank"></a>
+            </div>
+
+            <div class="button-section">
+              <input class="btn-wrapper" type="reset" value="Clear All">
+              <input class="btn-wrapper field" type="submit" value="Submit" required="required">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer-container">
+      <footer class="footer-control">
+        <div class="copyRight">
+          <p>© 2021 Sagar Gandhi</p>
+        </div>
+        <div class="social-media">
+          <a href="https://facebook.com" target="_blank">
+            <i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
+          <a href="https://google.com" target="_blank">
+            <i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i></a>
+          <a href="https://instagram.com" target="_blank">
+            <i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>
+        </div>
+      </footer>
+    </section>
+
+
+    <!-- javascript-->
+
+    <script src="main.js"></script>
+    <script type="text/javascript">
+      var datefield=document.createElement("input")
+      datefield.setAttribute("type", "date")
+      if (datefield.type!="date"){ //if browser doesn't support input type="date", load files for jQuery UI Date Picker
+        document.write('<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />\n')
+        document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"><\/script>\n')
+        document.write('<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"><\/script>\n')
+      }
+    </script>
+    <script>
+      if (datefield.type!="Year"){ //if browser doesn't support input type="date", initialize date picker widget:
+        jQuery(function($){ //on document.ready
+          $('#birthday').datepicker();
+        })
+      }
+    </script>
+
+  </body>  
+</html>
